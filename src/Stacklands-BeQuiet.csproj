@@ -5,6 +5,7 @@
 	  <LangVersion>8.0</LangVersion>
 	  <ModDeployDir>%localappdata%low\sokpop\Stacklands\Mods</ModDeployDir>
     <GameDir Condition="'$(GameDir)' == ''">C:\Steam\steamapps\common\Stacklands\</GameDir>
+    <RootNamespace>$(MSBuildProjectName.Replace("-", "_"))</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,13 +1,18 @@
 # Be Quiet!
 
-Silence that darn yippy dog! Or any other card by id.
+Silence that darn yippy dog! 
 
-By default, this mod quiets the dog and cat cards.
+Also silences cats and optionally silences dust bins.
+
+Other cards can be added to the list by their card id.
 
 # Settings
+
 |Name|Description|Default|
 |--|--|--|
 |Card List|A comma delimited list of card ids to silence.  For example, old_dog|dog, old_dog, cat, old_cat|
+|Mute dustbin|false|If enabled, the dustbin will not make a sound when cards are destroyed.  This is a louder sound.|
+|Mute dustbin card destroy|false|If enabled, will prevent the card destroyed by a dustbin from making a sound.  This is a quiet tick.|
 
 # Settings Limit Issue
 
@@ -41,6 +46,13 @@ https://github.com/NBKRedSpy/Stacklands-BeQuiet
 
 
 # Change Log
+
+## 1.2.0
+
+* Added the ability to mute dust bins as well.  (Disabled by default)
+* Requested by hade on the modding Discord.
+
 ## 1.1.0
+
 * Added cats.
 
