@@ -15,7 +15,7 @@ Silence that darn yippy dog! Or any other card by id.
 [tr]
 [td]Card List
 [/td]
-[td]A comma delimited list of card id's to silence.  For example, old_dog
+[td]A comma delimited list of card ids to silence.  For example, old_dog
 [/td]
 [td]dog, old_dog
 [/td]
