@@ -21,10 +21,13 @@ namespace Stacklands_BeQuiet
 
 			Log = Logger;
 
-			CardListConfig = this.Config.GetEntry<string>("Card List", "dog, old_dog" , new ConfigUI()
+			CardListConfig = this.Config.GetEntry<string>("Card List", "dog,old_dog,cat,old_cat" , new ConfigUI()
 			{
 				Tooltip = "The comma delimited list of cards to silence"
 			});
+
+			CardListConfig.UI.RestartAfterChange = true;
+
 		}
 
 		public override void Ready()
