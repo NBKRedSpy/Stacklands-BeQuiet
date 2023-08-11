@@ -40,6 +40,7 @@ After editing, do not go into this mod's configuration in the game, otherwise, t
 
 # Credits
 Created based on suggestion from Steam user vladspellbinder.
+Dustbin mute suggested by hade.
 
 # Source
 https://github.com/NBKRedSpy/Stacklands-BeQuiet

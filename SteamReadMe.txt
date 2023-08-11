@@ -68,6 +68,7 @@ After editing, do not go into this mod's configuration in the game, otherwise, t
 [h1]Credits[/h1]
 
 Created based on suggestion from Steam user vladspellbinder.
+Dustbin mute suggested by hade.
 
 [h1]Source[/h1]
 
