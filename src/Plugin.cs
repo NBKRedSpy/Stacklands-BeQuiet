@@ -7,6 +7,7 @@ using System.Reflection;
 using System.Text;
 using System.Web;
 using HarmonyLib;
+using UnityEngine;
 
 namespace Stacklands_BeQuiet
 {
@@ -75,9 +76,20 @@ namespace Stacklands_BeQuiet
 					.Where(x => x is TrashCan).SingleOrDefault();
 
 
-				if(dustBinCard != null)
+
+				if (dustBinCard != null)
 				{
-					dustBinCard.DestroySounds = new List<UnityEngine.AudioClip>();
+
+					//The game's audio player expects there to always be at least one audio clip.
+					//	create and add an empty one.
+					var emptyAudioClip = AudioClip.Create("test", 1, 1, 44000, false);
+					emptyAudioClip.SetData(new float[] { 0f }, 0);
+
+					dustBinCard.DestroySounds = new List<UnityEngine.AudioClip>()
+					{
+						emptyAudioClip
+					};
+
 				}
 			}
 		}

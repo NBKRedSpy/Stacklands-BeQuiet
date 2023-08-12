@@ -48,6 +48,10 @@ https://github.com/NBKRedSpy/Stacklands-BeQuiet
 
 # Change Log
 
+## 1.2.1
+
+* Fixed exception being thrown on empty audio play.
+
 ## 1.2.0
 
 * Added the ability to mute dust bins as well.  (Disabled by default)
