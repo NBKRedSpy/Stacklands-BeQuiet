@@ -72,20 +72,21 @@ namespace Stacklands_BeQuiet
 
 			if(MuteDustBinSpecialSounds.Value)
 			{
-				TrashCan dustBinCard = (TrashCan) WorldManager.instance?.CardDataPrefabs
-					.Where(x => x is TrashCan).SingleOrDefault();
+				//Search for multiple in case a mod adds a class derived from TrashCan
+				List<TrashCan> dustBinCards = WorldManager.instance?.CardDataPrefabs
+					.Where(x => x is TrashCan)
+					.Cast<TrashCan>()
+					.ToList();
 
+				var emptyAudioClip = AudioClip.Create("BeQuiet_Empty", 1, 1, 44000, false);
+				emptyAudioClip.SetData(new float[] { 0f }, 0);
 
-
-				if (dustBinCard != null)
+				foreach (var dustbinCard in dustBinCards)
 				{
-
 					//The game's audio player expects there to always be at least one audio clip.
 					//	create and add an empty one.
-					var emptyAudioClip = AudioClip.Create("test", 1, 1, 44000, false);
-					emptyAudioClip.SetData(new float[] { 0f }, 0);
 
-					dustBinCard.DestroySounds = new List<UnityEngine.AudioClip>()
+					dustbinCard.DestroySounds = new List<UnityEngine.AudioClip>()
 					{
 						emptyAudioClip
 					};

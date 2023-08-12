@@ -76,6 +76,11 @@ https://github.com/NBKRedSpy/Stacklands-BeQuiet
 
 [h1]Change Log[/h1]
 
+[h2]1.2.2[/h2]
+[list]
+[*]Changed the search logic to allow multiple TrashCan CardData entries in case a modder adds an additional card that is derived from TrashCan.
+[/list]
+
 [h2]1.2.1[/h2]
 [list]
 [*]Fixed exception being thrown on empty audio play.

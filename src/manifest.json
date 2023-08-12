@@ -2,6 +2,6 @@
     "name": "Be Quiet!",
     "assembly": "Stacklands_BeQuiet.dll",
     "id": "Stacklands_BeQuiet",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "description": "Mutes the pickup sounds of cards."
 }
